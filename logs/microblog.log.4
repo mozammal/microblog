@@ -1,0 +1,121 @@
+2020-11-06 19:31:22,999 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 19:31:46,616 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:23:42,993 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:24:47,607 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:28:44,667 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:28:54,646 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:29:12,731 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:31:43,696 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:31:54,450 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:31:58,134 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:32:04,549 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-06 20:34:21,483 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-07 10:27:42,867 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:48]
+2020-11-07 10:28:12,151 ERROR: Exception on / [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "F:\python projects\microblog\app\routes.py", line 93, in before_request
+    if current_user.is_authenticated:
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 303, in _load_user
+    "Missing user_loader or request_loader. Refer to "
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.
+2020-11-07 10:28:12,601 ERROR: Exception on /favicon.ico [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "F:\python projects\microblog\app\routes.py", line 93, in before_request
+    if current_user.is_authenticated:
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 303, in _load_user
+    "Missing user_loader or request_loader. Refer to "
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.
+2020-11-07 10:29:03,449 ERROR: Exception on / [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "F:\python projects\microblog\app\routes.py", line 93, in before_request
+    if current_user.is_authenticated:
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 303, in _load_user
+    "Missing user_loader or request_loader. Refer to "
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.
+2020-11-07 10:29:03,707 ERROR: Exception on /favicon.ico [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "F:\python projects\microblog\app\routes.py", line 93, in before_request
+    if current_user.is_authenticated:
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 303, in _load_user
+    "Missing user_loader or request_loader. Refer to "
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.

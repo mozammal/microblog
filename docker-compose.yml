@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+  elk1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.6
+    environment:
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - elk-data:/var/lib/elasticsearch
+    networks:
+      - elk-network
+  db:
+    image: mysql:8.0
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=microblog
+      - MYSQL_USER=microblog
+      - MYSQL_PASSWORD=password
+    ports:
+      - 3306:3306
+    networks:
+      - elk-network
+  microblog:
+    container_name: microblog
+    image: microblog
+    restart: on-failure
+    depends_on:
+      - elk1
+      - db
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      volumes:
+        - /data/microblog
+      ports:
+        - 5000:5000
+      environment:
+        - SECRET_KEY=@#aoim<>kl:?9_07
+        - MAIL_SERVER=smtp.googlemail.com
+        - MAIL_PORT=587
+        - MAIL_USE_TLS=true
+        - MAIL_USERNAME=tomalmozammal@gmail.com
+        - MAIL_PASSWORD=
+        - DATABASE_URL=mysql+pymysql://microblog:<password>@dbserver/microblog
+      networks:
+        - elk-network
+
+volumes:
+  elk-data:
+
+networks:
+  elk-network:
+    driver: bridge

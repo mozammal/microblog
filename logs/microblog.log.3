@@ -1,0 +1,129 @@
+2020-11-07 10:29:43,959 ERROR: Exception on /favicon.ico [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "F:\python projects\microblog\app\routes.py", line 93, in before_request
+    if current_user.is_authenticated:
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 303, in _load_user
+    "Missing user_loader or request_loader. Refer to "
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.
+2020-11-07 10:29:49,553 ERROR: Exception on /login [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "F:\python projects\microblog\app\routes.py", line 93, in before_request
+    if current_user.is_authenticated:
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 303, in _load_user
+    "Missing user_loader or request_loader. Refer to "
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.
+2020-11-07 10:29:49,804 ERROR: Exception on /favicon.ico [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2242, in preprocess_request
+    rv = func()
+  File "F:\python projects\microblog\app\routes.py", line 93, in before_request
+    if current_user.is_authenticated:
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "f:\python projects\microblog\venv\lib\site-packages\werkzeug\local.py", line 306, in _get_current_object
+    return self.__local()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 26, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\utils.py", line 346, in _get_user
+    current_app.login_manager._load_user()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 303, in _load_user
+    "Missing user_loader or request_loader. Refer to "
+Exception: Missing user_loader or request_loader. Refer to http://flask-login.readthedocs.io/#how-it-works for more info.
+2020-11-07 15:53:16,574 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:46]
+2020-11-07 16:01:58,516 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:46]
+2020-11-07 17:41:35,262 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:50]
+2020-11-07 17:44:07,382 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:50]
+2020-11-07 17:52:34,576 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:50]
+2020-11-07 21:33:09,089 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:50]
+2020-11-07 21:57:49,100 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:50]
+2020-11-07 21:58:45,265 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzd29yZCI6NSwiZXhwIjoxNjA0NzY1MjkzLjE1NjM2NH0.CJQ-vaaS-x-Ybnr5HMjf3kY9SDqXFFrO8KxyEmK6y3I [GET] [in f:\python projects\microblog\venv\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:\python projects\microblog\app\routes.py", line 27, in reset_password
+    return render_template('reset_password.html', form=form)
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "f:\python projects\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "f:\python projects\microblog\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "f:\python projects\microblog\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "f:\python projects\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "F:\python projects\microblog\app\templates\reset_password.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "F:\python projects\microblog\app\templates\base.html", line 32, in top-level template code
+    {% block content %} {% endblock %}
+  File "F:\python projects\microblog\app\templates\reset_password.html", line 7, in block "content"
+    {{ form.password.label }}<br>
+  File "f:\python projects\microblog\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.ResetPasswordRequestForm object' has no attribute 'password'
+2020-11-08 10:11:08,407 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:52]
+2020-11-08 13:33:38,888 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:58]
+2020-11-08 13:34:15,268 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:58]
+2020-11-08 13:34:36,141 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:58]
+2020-11-08 13:37:27,524 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:58]
+2020-11-08 13:38:10,523 INFO: Microblog startup [in F:\python projects\microblog\app\__init__.py:58]
